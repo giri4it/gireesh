@@ -15,7 +15,9 @@
     "lodash": "~2.4.1",
     "ejs": "~0.8.4",
     "composable-middleware": "^0.3.0",
-    "connect-mongo": "^0.4.1",
+    "connect-mongo": "^0.4.1"
+  },
+  "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-autoprefixer": "~0.7.2",
     "grunt-wiredep": "~1.8.0",
@@ -77,7 +79,7 @@
     "start": "node server/app.js",
     "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update",
-    "postinstall": "grunt build"
+    "postinstall": "bower install & node grunt build"
   },
   "private": true
 }

@@ -79,7 +79,7 @@
     "start": "node server/app.js",
     "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update",
-    "postinstall": "grunt build"
+    "postinstall": "node grunt build"
   },
   "private": true
 }

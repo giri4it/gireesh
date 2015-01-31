@@ -29,7 +29,7 @@ module.exports = function(app) {
 
   if ('production' === env) {
     app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
-    app.use(express.static(path.join(config.root,__dirname + '/dist')));
+    app.use(express.static(path.join(config.root, '/dist')));
     app.set('appPath', config.root + __dirname +'/dist');
     app.use(morgan('dev'));
   }
@@ -37,8 +37,8 @@ module.exports = function(app) {
   if ('development' === env || 'test' === env) {
     //app.use(require('connect-livereload')());
     app.use(express.static(path.join(config.root, '.tmp')));
-    app.use(express.static(path.join(config.root, __dirname +'/dist')));
-    app.set('appPath', __dirname +'/dist');
+    app.use(express.static(path.join(config.root, '/dist')));
+    app.set('appPath', '/dist');
     app.use(morgan('dev'));
     app.use(errorHandler()); // Error handler - has to be last
   }

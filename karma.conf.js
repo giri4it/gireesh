@@ -7,47 +7,31 @@ module.exports = function(config) {
     basePath: '',
 
     // testing framework to use (jasmine/mocha/qunit/...)
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', "requirejs"],
 
     // list of files / patterns to load in the browser
     files: [
-      'client/bower_components/jquery/dist/jquery.js',
-      'client/bower_components/angular/angular.js',
-      'client/bower_components/angular-mocks/angular-mocks.js',
-      'client/bower_components/angular-resource/angular-resource.js',
-      'client/bower_components/angular-cookies/angular-cookies.js',
-      'client/bower_components/angular-sanitize/angular-sanitize.js',
-      'client/bower_components/angular-route/angular-route.js',
-      'client/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-      'client/bower_components/lodash/dist/lodash.compat.js',
-      'client/app/app.js',
-      'client/app/app.coffee',
-      'client/app/**/*.js',
-      'client/app/**/*.coffee',
-      'client/components/**/*.js',
-      'client/components/**/*.coffee',
-      'client/app/**/*.jade',
-      'client/components/**/*.jade',
-      'client/app/**/*.html',
-      'client/components/**/*.html'
+      {pattern: 'bower_components/angular/angular.js', included: false },
+      {pattern: 'bower_components/angular-mocks/angular-mocks.js', included: false },
+      {pattern: 'bower_components/angular-animate/angular-animate.js', included: false },
+      {pattern: 'bower_components/angular-aria/angular-aria.js', included: false },
+      {pattern: 'bower_components/angular-cookies/angular-cookies.js', included: false },
+      {pattern: 'bower_components/angular-messages/angular-messages.js', included: false },
+      {pattern: 'bower_components/angular-resource/angular-resource.js', included: false },
+      {pattern: 'bower_components/angular-route/angular-route.js', included: false },
+      {pattern: 'bower_components/angular-sanitize/angular-sanitize.js', included: false },
+      {pattern: 'bower_components/angular-touch/angular-touch.js', included: false },
+      {pattern: 'app/scripts/*.js', included: false },
+      {pattern: 'app/scripts/**/*.js', included: false },
+      {pattern: 'test/spec/**/*.js', included: false },
+      // http://karma-runner.github.io/0.10/plus/requirejs.html
+      'test/test-main.js'
     ],
 
-    preprocessors: {
-      '**/*.jade': 'ng-jade2js',
-      '**/*.html': 'html2js',
-      '**/*.coffee': 'coffee',
-    },
-
-    ngHtml2JsPreprocessor: {
-      stripPrefix: 'client/'
-    },
-
-    ngJade2JsPreprocessor: {
-      stripPrefix: 'client/'
-    },
-
     // list of files / patterns to exclude
-    exclude: [],
+    exclude: [
+        'app/scripts/main.js'
+    ],
 
     // web server port
     port: 8080,

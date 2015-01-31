@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/post_install.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.04511278" vertical-offset="0" max-vertical-offset="665">
-              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -488,12 +488,12 @@
       <workItem from="1420310321677" duration="7937000" />
       <workItem from="1422598006727" duration="3651000" />
       <workItem from="1422715413172" duration="3602000" />
-      <workItem from="1422723185421" duration="3278000" />
+      <workItem from="1422723185421" duration="3427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18468000" />
+    <option name="totallyTimeSpent" value="18617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="836" extended-state="6" />
@@ -693,7 +693,7 @@
     <entry file="file://$PROJECT_DIR$/post_install.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04511278" vertical-offset="0" max-vertical-offset="665">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
           <folding />
         </state>
       </provider>

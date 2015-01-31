@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 
   // Configurable paths for the application
   var appConfig = {
-    client: require('./client/bower.json').appPath || 'client',
+    client: require('./bower.json').appPath || 'client',
     dist: 'dist'
   };
 
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
-        files: ['client/bower.json'],
+        files: ['bower.json'],
         tasks: ['wiredep']
       },
       js: {
@@ -183,7 +183,7 @@ module.exports = function (grunt) {
         imagesDir: '<%= yeoman.client %>/client/images',
         javascriptsDir: '<%= yeoman.client %>/client/scripts',
         fontsDir: '<%= yeoman.client %>/client/styles/fonts',
-        importPath: './client/bower_components',
+        importPath: './bower_components',
         httpImagesPath: '/client/images',
         httpGeneratedImagesPath: '/client/images/generated',
         httpFontsPath: '/client/styles/fonts',

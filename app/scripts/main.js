@@ -3,9 +3,7 @@ require.config({
   paths: {
     angular: '../../bower_components/angular/angular',
     'angular-animate': '../../bower_components/angular-animate/angular-animate',
-    'angular-aria': '../../bower_components/angular-aria/angular-aria',
     'angular-cookies': '../../bower_components/angular-cookies/angular-cookies',
-    'angular-messages': '../../bower_components/angular-messages/angular-messages',
     'angular-mocks': '../../bower_components/angular-mocks/angular-mocks',
     'angular-resource': '../../bower_components/angular-resource/angular-resource',
     'angular-route': '../../bower_components/angular-route/angular-route',
@@ -19,12 +17,6 @@ require.config({
       exports: 'angular'
     },
     'angular-route': [
-      'angular'
-    ],
-    'angular-aria': [
-      'angular'
-    ],
-    'angular-messages': [
       'angular'
     ],
     'angular-cookies': [
@@ -63,8 +55,6 @@ window.name = 'NG_DEFER_BOOTSTRAP!';
 require([
   'angular',
   'app',
-  'angular-aria',
-  'angular-messages',
   'angular-route',
   'angular-cookies',
   'angular-sanitize',

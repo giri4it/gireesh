@@ -15,9 +15,7 @@ requirejs.config({
     paths: {
     angular: '../../bower_components/angular/angular',
     'angular-animate': '../../bower_components/angular-animate/angular-animate',
-    'angular-aria': '../../bower_components/angular-aria/angular-aria',
     'angular-cookies': '../../bower_components/angular-cookies/angular-cookies',
-    'angular-messages': '../../bower_components/angular-messages/angular-messages',
     'angular-mocks': '../../bower_components/angular-mocks/angular-mocks',
     'angular-resource': '../../bower_components/angular-resource/angular-resource',
     'angular-route': '../../bower_components/angular-route/angular-route',

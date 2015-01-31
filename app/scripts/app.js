@@ -1,5 +1,5 @@
 /*jshint unused: vars */
-define(['angular', 'controllers/main', 'controllers/about', 'controllers/login']/*deps*/, function (angular, MainCtrl, AboutCtrl, LoginCtrl)/*invoke*/ {
+define(['angular', 'controllers/main', 'controllers/about']/*deps*/, function (angular, MainCtrl, AboutCtrl)/*invoke*/ {
   'use strict';
 
   /**
@@ -13,11 +13,8 @@ define(['angular', 'controllers/main', 'controllers/about', 'controllers/login']
   return angular
     .module('ngRjGireeshApp', ['ngRjGireeshApp.controllers.MainCtrl',
 'ngRjGireeshApp.controllers.AboutCtrl',
-'ngRjGireeshApp.controllers.LoginCtrl',
 /*angJSDeps*/
     'ngCookies',
-    'ngAria',
-    'ngMessages',
     'ngResource',
     'ngSanitize',
     'ngRoute',
@@ -33,10 +30,6 @@ define(['angular', 'controllers/main', 'controllers/about', 'controllers/login']
         .when('/about', {
           templateUrl: 'views/about.html',
           controller: 'AboutCtrl'
-        })
-        .when('/login', {
-          templateUrl: 'views/login.html',
-          controller: 'LoginCtrl'
         })
         .otherwise({
           redirectTo: '/'
